@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Portfolio Website - React Version
 
 A modern, responsive portfolio website built with React and Vite.
@@ -187,3 +188,7 @@ And update the CSS in `src/components/Hero.css`:
 ---
 
 Made with ❤️ using React and Vite
+=======
+# portfolio
+this is my portfolio
+>>>>>>> ada4dc6ca3409ee178a4896c0ad44040d520440b
