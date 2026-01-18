@@ -1,9 +1,11 @@
 .task-manager-app {
   min-height: 500px;
   padding: 2rem;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%);
+  border: 1px solid var(--border-color);
   border-radius: 20px;
-  color: white;
+  color: var(--text-white);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
 }
 
 .task-container {
@@ -27,25 +29,30 @@
 .task-input {
   flex: 1;
   padding: 0.875rem 1rem;
-  border: none;
+  border: 2px solid var(--border-color);
   border-radius: 10px;
   font-size: 1rem;
   font-family: inherit;
-  background: rgba(255, 255, 255, 0.95);
-  color: var(--text-dark);
+  background: var(--bg-card);
+  color: var(--text-white);
   transition: all 0.3s ease;
+}
+
+.task-input::placeholder {
+  color: var(--text-light);
 }
 
 .task-input:focus {
   outline: none;
-  background: white;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.2);
+  background: var(--bg-card-hover);
 }
 
 .task-add-btn {
   padding: 0.875rem 1.5rem;
-  background: white;
-  color: var(--primary-color);
+  background: var(--primary-color);
+  color: var(--bg-dark);
   border: none;
   border-radius: 10px;
   font-weight: 600;
@@ -56,8 +63,9 @@
 }
 
 .task-add-btn:hover {
+  background: var(--secondary-color);
   transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
 }
 
 .task-stats {
@@ -66,7 +74,8 @@
   gap: 1rem;
   margin-bottom: 1rem;
   padding: 0.75rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 212, 255, 0.1);
+  border: 1px solid rgba(0, 212, 255, 0.2);
   border-radius: 10px;
   font-size: 0.9rem;
   font-weight: 500;
@@ -81,9 +90,9 @@
 
 .filter-btn {
   padding: 0.5rem 1.25rem;
-  background: rgba(255, 255, 255, 0.2);
-  color: white;
-  border: 2px solid transparent;
+  background: rgba(0, 212, 255, 0.1);
+  color: var(--text-white);
+  border: 2px solid rgba(0, 212, 255, 0.3);
   border-radius: 20px;
   font-weight: 500;
   cursor: pointer;
@@ -91,13 +100,14 @@
 }
 
 .filter-btn:hover {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(0, 212, 255, 0.2);
+  border-color: var(--primary-color);
 }
 
 .filter-btn.active {
-  background: white;
-  color: var(--primary-color);
-  border-color: white;
+  background: var(--primary-color);
+  color: var(--bg-dark);
+  border-color: var(--primary-color);
 }
 
 .task-list {
@@ -111,17 +121,17 @@
 }
 
 .task-list::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 212, 255, 0.1);
   border-radius: 10px;
 }
 
 .task-list::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(0, 212, 255, 0.3);
   border-radius: 10px;
 }
 
 .task-list::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(0, 212, 255, 0.5);
 }
 
 .task-item {
@@ -130,8 +140,9 @@
   align-items: center;
   padding: 1rem;
   margin-bottom: 0.75rem;
-  background: rgba(255, 255, 255, 0.95);
-  color: var(--text-dark);
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  color: var(--text-white);
   border-radius: 10px;
   transition: all 0.3s ease;
   animation: slideIn 0.3s ease;
@@ -150,7 +161,8 @@
 
 .task-item:hover {
   transform: translateX(5px);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-color: var(--primary-color);
+  box-shadow: 0 4px 15px rgba(0, 212, 255, 0.2);
 }
 
 .task-item.completed {
@@ -214,9 +226,9 @@
 .clear-completed-btn {
   width: 100%;
   padding: 0.75rem;
-  background: rgba(255, 255, 255, 0.2);
-  color: white;
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  background: rgba(0, 212, 255, 0.1);
+  color: var(--text-white);
+  border: 2px solid rgba(0, 212, 255, 0.3);
   border-radius: 10px;
   font-weight: 600;
   cursor: pointer;
@@ -224,8 +236,9 @@
 }
 
 .clear-completed-btn:hover {
-  background: rgba(255, 255, 255, 0.3);
-  border-color: white;
+  background: rgba(0, 212, 255, 0.2);
+  border-color: var(--primary-color);
+  box-shadow: 0 5px 20px rgba(0, 212, 255, 0.2);
 }
 
 @media (max-width: 600px) {

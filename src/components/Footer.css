@@ -1,6 +1,7 @@
 .footer {
-    background: var(--text-dark);
-    color: var(--white);
+    background: var(--bg-darker);
+    border-top: 1px solid var(--border-color);
+    color: var(--text-white);
     padding: 2rem 0;
     text-align: center;
 }

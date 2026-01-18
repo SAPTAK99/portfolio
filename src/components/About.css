@@ -1,5 +1,5 @@
 .about {
-    background: var(--bg-light);
+    background: var(--bg-dark);
 }
 
 .about-content {
@@ -32,6 +32,8 @@
 
 .stat-item:hover {
     transform: translateY(-5px);
+    border-color: var(--primary-color);
+    box-shadow: var(--shadow-hover);
 }
 
 .stat-number {
@@ -47,6 +49,10 @@
 .stat-label {
     color: var(--text-light);
     font-weight: 500;
+}
+
+.about-text p {
+    color: var(--text-light);
 }
 
 @media (max-width: 768px) {

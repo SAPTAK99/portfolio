@@ -1,5 +1,5 @@
 .projects {
-    background: var(--bg-light);
+    background: var(--bg-darker);
 }
 
 .projects-grid {
@@ -9,7 +9,8 @@
 }
 
 .project-card {
-    background: var(--white);
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
     border-radius: 15px;
     overflow: hidden;
     box-shadow: var(--shadow);
@@ -18,6 +19,7 @@
 
 .project-card:hover {
     transform: translateY(-10px);
+    border-color: var(--primary-color);
     box-shadow: var(--shadow-hover);
 }
 
@@ -49,8 +51,8 @@
 
 .project-link {
     padding: 0.75rem 1.5rem;
-    background: var(--white);
-    color: var(--primary-color);
+    background: var(--primary-color);
+    color: var(--bg-dark);
     text-decoration: none;
     border-radius: 25px;
     font-weight: 600;
@@ -68,7 +70,7 @@
 .project-info h3 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
-    color: var(--text-dark);
+    color: var(--text-white);
 }
 
 .project-info p {
@@ -85,8 +87,9 @@
 
 .tag {
     padding: 0.25rem 0.75rem;
-    background: var(--bg-light);
+    background: rgba(0, 212, 255, 0.1);
     color: var(--primary-color);
+    border: 1px solid rgba(0, 212, 255, 0.3);
     border-radius: 15px;
     font-size: 0.875rem;
     font-weight: 500;

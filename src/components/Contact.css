@@ -24,17 +24,20 @@
     align-items: center;
     gap: 1rem;
     padding: 1rem;
-    background: var(--bg-light);
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
     border-radius: 10px;
     text-decoration: none;
-    color: var(--text-dark);
+    color: var(--text-white);
     transition: all 0.3s ease;
 }
 
 .contact-item:hover {
     background: var(--primary-color);
-    color: var(--white);
+    border-color: var(--primary-color);
+    color: var(--bg-dark);
     transform: translateX(10px);
+    box-shadow: 0 5px 20px rgba(0, 212, 255, 0.3);
 }
 
 .contact-icon {
@@ -51,18 +54,26 @@
 .form-group textarea {
     width: 100%;
     padding: 1rem;
-    border: 2px solid var(--bg-light);
+    background: var(--bg-card);
+    border: 2px solid var(--border-color);
     border-radius: 10px;
     font-family: inherit;
     font-size: 1rem;
+    color: var(--text-white);
     transition: all 0.3s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: var(--text-light);
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.2);
+    background: var(--bg-card-hover);
 }
 
 @media (max-width: 768px) {
