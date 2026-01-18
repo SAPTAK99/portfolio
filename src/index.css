@@ -9,15 +9,15 @@
     --secondary-color: #0099cc;
     --accent-color: #ff6b6b;
     --text-dark: #1a1a1a;
-    --text-light: #b0b0b0;
+    --text-light: #a0a0a0;
     --text-white: #ffffff;
-    --bg-dark: #0a0a0a;
-    --bg-darker: #000000;
-    --bg-card: #1a1a1a;
-    --bg-card-hover: #252525;
-    --border-color: #2a2a2a;
+    --bg-dark: #1e1e2e;
+    --bg-darker: #161620;
+    --bg-card: #2a2a3e;
+    --bg-card-hover: #35354a;
+    --border-color: #3a3a4e;
     --white: #ffffff;
-    --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     --shadow-hover: 0 15px 40px rgba(0, 212, 255, 0.2);
 }
 

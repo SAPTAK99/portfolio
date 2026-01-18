@@ -2,7 +2,7 @@
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%);
+    background: linear-gradient(135deg, #1e1e2e 0%, #2a2a3e 50%, #1e1e2e 100%);
     color: var(--text-white);
     padding-top: 80px;
     position: relative;
