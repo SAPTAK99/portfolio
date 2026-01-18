@@ -1,0 +1,19 @@
+🚀 QUICKEST WAY TO DEPLOY (Takes 2-3 minutes):
+
+1. Open browser: https://vercel.com
+2. Click "Sign Up" (or Login if you have account)
+3. Click "Add New Project"
+4. You'll see "Import Git Repository" - but look for "Deploy" button or drag & drop
+5. OR better: Click "Import Git Repository" → "Deploy without Git" 
+6. Drag your ENTIRE portfolio folder into the browser
+7. Click "Deploy"
+8. Wait 1-2 minutes
+9. Get your live URL!
+
+That's it! No CLI, no commands needed.
+
+ALTERNATIVE - Even Faster if you have GitHub:
+1. Push to GitHub (I can help with this)
+2. Connect GitHub to Vercel
+3. One-click deploy
+4. Done in 30 seconds!
