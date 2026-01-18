@@ -1,0 +1,30 @@
+🔐 GITHUB AUTHENTICATION NEEDED
+
+You need to authenticate to push. Easiest options:
+
+OPTION 1: Use Personal Access Token (Recommended)
+1. Go to: https://github.com/settings/tokens
+2. Click "Generate new token" → "Generate new token (classic)"
+3. Name it: "Portfolio Push"
+4. Select scope: ✅ repo (check the "repo" checkbox)
+5. Click "Generate token"
+6. COPY the token (you won't see it again!)
+7. When git asks for password, paste the token instead
+
+Then run:
+   git push -u origin main
+
+OPTION 2: Use GitHub Desktop (Easier)
+1. Download: https://desktop.github.com/
+2. Sign in with GitHub
+3. Add your portfolio folder
+4. Click "Publish repository"
+
+OPTION 3: Push via Vercel (Easiest!)
+Since you're already on Vercel:
+1. Refresh the Vercel page
+2. Your "portfolio" repo should now appear in the list
+3. Click "Import" next to it
+4. Vercel will deploy it automatically!
+
+Try Option 3 first - it's the easiest!

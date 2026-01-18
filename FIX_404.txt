@@ -1,0 +1,45 @@
+🔴 THE 404 ERROR IS BECAUSE YOUR CODE ISN'T ON GITHUB YET!
+
+You need to push your code first. Here are the EASIEST options:
+
+═══════════════════════════════════════════════════════════
+
+OPTION 1: Use GitHub Desktop (EASIEST - No commands!)
+─────────────────────────────────────────────────────────────
+1. Download GitHub Desktop: https://desktop.github.com/
+2. Install it
+3. Sign in with your GitHub account (SAPTAK99)
+4. In GitHub Desktop:
+   - Click "File" → "Add Local Repository"
+   - Browse to: C:\Users\sapta\portfolio
+   - Click "Add Repository"
+5. Click "Publish repository" button (top center)
+6. Make sure "Keep this code private" is unchecked
+7. Click "Publish Repository"
+8. Done! ✅
+
+Then go back to Vercel and refresh - your repo will appear!
+
+═══════════════════════════════════════════════════════════
+
+OPTION 2: Use Personal Access Token (If you prefer command line)
+─────────────────────────────────────────────────────────────
+1. Go to: https://github.com/settings/tokens
+2. Click "Generate new token" → "Generate new token (classic)"
+3. Give it a name: "Portfolio Push"
+4. Select expiration: "No expiration" (or 90 days)
+5. Check the box: ✅ "repo" (this gives full repository access)
+6. Click "Generate token" at the bottom
+7. COPY the token (it looks like: ghp_xxxxxxxxxxxxxxxxxxxx)
+   ⚠️ IMPORTANT: Copy it now! You won't see it again!
+
+8. In terminal, run these commands:
+   cd C:\Users\sapta\portfolio
+   git push -u origin main
+   
+9. When asked for "Username": Enter your GitHub username (SAPTAK99)
+10. When asked for "Password": PASTE the token (not your password!)
+
+═══════════════════════════════════════════════════════════
+
+After pushing, refresh Vercel page - your portfolio will appear!

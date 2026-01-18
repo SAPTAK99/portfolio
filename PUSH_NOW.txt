@@ -1,0 +1,25 @@
+⚠️ YOUR CODE IS READY TO PUSH! 
+
+You need to:
+1. Create a GitHub repository first
+2. Then push your code to it
+
+STEPS:
+
+1. Open: https://github.com/new (in a new tab)
+2. Repository name: portfolio
+3. Keep it Public (or Private)
+4. DO NOT check "Add a README file"
+5. Click "Create repository"
+
+6. After creating, GitHub will show you a page with commands.
+   Copy the repository URL (it will look like):
+   https://github.com/SAPTAK99/portfolio.git
+
+7. Send me that URL and I'll push your code!
+
+OR you can run these commands yourself (replace YOUR_USERNAME):
+   git remote add origin https://github.com/YOUR_USERNAME/portfolio.git
+   git push -u origin main
+
+Then refresh Vercel page - your portfolio will appear!

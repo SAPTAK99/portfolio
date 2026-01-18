@@ -1,0 +1,8 @@
+AFTER creating the GitHub repository, run these commands:
+
+1. git branch -M main
+2. git remote add origin https://github.com/SAPTAK99/portfolio.git
+   (Replace SAPTAK99 with your GitHub username and portfolio with your repo name)
+3. git push -u origin main
+
+Then go back to Vercel and click "Import" on your portfolio repository!

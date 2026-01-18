@@ -43,7 +43,22 @@ const Hero = () => {
           </div>
           <div className="hero-image">
             <div className="image-placeholder">
-              <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <img 
+                src="/images/profile.jpg" 
+                alt="Saptak Majumder" 
+                className="profile-image"
+                onError={(e) => {
+                  // Fallback to placeholder if image not found
+                  e.target.style.display = 'none';
+                  e.target.nextElementSibling.style.display = 'flex';
+                }}
+              />
+              <svg 
+                viewBox="0 0 200 200" 
+                xmlns="http://www.w3.org/2000/svg"
+                className="fallback-image"
+                style={{display: 'none'}}
+              >
                 <circle cx="100" cy="100" r="80" fill="url(#gradient)"/>
                 <defs>
                   <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
